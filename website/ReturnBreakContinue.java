@@ -23,7 +23,7 @@ public class ReturnBreakContinue {
     static void Break(int n){
         for (int i = 1; i <= n; i++) {
             if(i == 3){
-                return;
+                break;
             }
             System.out.print(i+" ");
         }
