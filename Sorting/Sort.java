@@ -14,6 +14,7 @@ public class Sort {
         insertionSort(arr2);
         System.out.println(Arrays.toString(arr2));
     }
+    // bubble sort
     static void bubbleSort(int[] arr){
         boolean swapped;
         for (int i = 0; i < arr.length; i++) {
@@ -31,6 +32,7 @@ public class Sort {
             }
         }
     }
+    // selection sort
     static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             int last = arr.length - i - 1;
@@ -47,6 +49,7 @@ public class Sort {
         }
         return max;
     }
+    // insertion sort
     static void insertionSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {
             for(int j = i+1; j > 0 ; j--){
