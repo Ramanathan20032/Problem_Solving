@@ -10,7 +10,7 @@ public class PrintNaturalNumbersWithRecursion {
 
     static void naturalPrint(int n){
         if (n == 1) {
-            System.out.print(1);
+            System.out.print(1+" ");
         }
         else {
             naturalNumbers(n - 1);
