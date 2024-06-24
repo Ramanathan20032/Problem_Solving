@@ -8,15 +8,6 @@ public class PrintNaturalNumbersWithRecursion {
         naturalPrint(n);
     }
 
-    static void naturalNumbers(int n){
-        if(n == 0){
-            return ;
-        }
-        naturalNumbers(n-1);
-        System.out.print(n+" ");
-    }
-
-
     static void naturalPrint(int n){
         if (n == 1) {
             System.out.print(1);
