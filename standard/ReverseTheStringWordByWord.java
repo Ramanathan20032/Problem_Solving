@@ -2,7 +2,7 @@ package Standard;
 
 public class ReverseTheStringWordByWord {
     public static void main(String[] args) {
-        String originalString = "Welcome to programming";
+        String originalString = "... Welcome to programming ..";
         String reverseString = reverseStringWordByWord(originalString);
 
         System.out.println(originalString);
