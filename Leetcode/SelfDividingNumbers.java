@@ -10,8 +10,8 @@ public class SelfDividingNumbers{
         List<Integer> result = selfDividingNumbers(right, left);
         System.out.println(result);
     }
+    
     static List<Integer> selfDividingNumbers(int right, int left){
-
         List<Integer> arr = new ArrayList<>();
         for (int i = right ; i <= left ; i++) {
             if(isSelfDividing(i)){
@@ -20,6 +20,7 @@ public class SelfDividingNumbers{
         }
         return arr;
     }
+    
     static boolean isSelfDividing(int num){
         int originalNumber = num;
 
@@ -32,4 +33,5 @@ public class SelfDividingNumbers{
         }
         return true;
     }
+    
 }
