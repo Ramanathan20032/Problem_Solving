@@ -10,18 +10,16 @@ public class moveZerosLeft {
         System.out.println("Modified zeros to left : " + Arrays.toString(arr));
     }
     static void moveZeros(int[] arr){
-        int length = arr.length;
-        int[] newArr = new int[length];
-        int index = length - 1;
+        int index = arr.length - 1;
 
-        for (int i = length - 1; i >= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             if(arr[i] != 0){
-                newArr[index] = arr[i];
+                arr[index] = arr[i];
                 index--;
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = newArr[i];
+        for (int i = index; i >= 0; i--) {
+            arr[i] = 0;
         }
     }
 }
